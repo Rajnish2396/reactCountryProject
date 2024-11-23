@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    ---bodyBg:#fff;
+    --headerBg:#fff;
+    --textColor:#444;
+    --cardBg:#fff;
+    font-family: "Nunito Sans", sans-serif;
+    padding-bottom: 35px;
+    background:var( ---bodyBg);
+    color:var(--textColor);
+
+}
+body.dark{
+    ---bodyBg:hsl(209, 23%, 22%);
+    --headerBg:hsl(207, 26%, 17%);
+    --textColor:#fff;
+    --cardBg:hsl(207, 26%, 17%);
+}
+header{
+   
+    width: 100%;
+    box-shadow: 0px 0px 4px #ccc;
+    padding: 20px 0;
+    background-color:#fff;
+    background:var( --headerBg);
+}
+body.dark header{
+    box-shadow:none;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+.header{
+    width:1024px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:5px
+}
+.header div{
+    display: flex;
+    align-items:center;
+    gap:15px    
+}
+.filterSearch{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:35px 0;
+}
+.view{
+    max-width:1024px;
+    margin-inline:auto;
+}
+.serachBox{
+    border-radius: 4px;
+    background:var(--headerBg);
+    box-shadow: 0px 0px 4px #ccc;
+     padding: 5px 15px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    position: relative;
+}
+.serachBox i{
+    font-size:15px;
+}
+.serachBox input{
+    height:30px;
+    max-width:350px;
+    border:none;
+    outline:none;
+    background:var(--headerBg);
+    color:var(--textColor)
+}
+.serachBox i{
+    color:#9d929299; 
+}
+.filterBox{
+padding:5px 15px;
+}
+.filterBox li{
+    padding:8px 0;
+    text-align:left;
+}
+.filterBox li span{
+    padding:5px;
+    width:100%;
+    height:40px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:0 15px;
+    border-radius:5px;
+}
+.filterBox li span i{
+    font-size:12px;
+}
+.filterBox li ul{
+    box-shadow: 0px 0px 4px #ccc;
+    border-radius:8px;
+    overflow:hidden;
+    margin-top:15px;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    display:none;
+}
+.filterBox li ul.show{
+    display:block;
+}
+.filterBox li ul li{
+    padding-inline:15px;
+}
+.countryList{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    gap:25px;
+    flex-wrap:wrap;
+}
+.countryCard{
+    max-width:230px;
+    background:var(--cardBg);
+    box-shadow: 0px 0px 4px #ccc;
+    border-radius:4px;
+    overflow:hidden;
+}
+body.dark .countryCard{
+    box-shadow:none;
+}
+.countryCard .countryImage{
+    max-height: 125px;
+    overflow: hidden;
+    width: 100%;
+    padding-right: 0;
+}
+.countryCard p{
+    font-size: 14px;
+    padding: 3px 0;
+}
+.countryInfo{
+    padding:15px 20px 32px 20px;
+}
+.countryName{
+    padding-bottom:15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.bacBtn{
+    margin-top: 30px;
+   
+    box-shadow: 0px 0px 4px #ccc;
+    width: 120px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.countryDtails{
+    display:flex;
+    padding-top:45px;
+    align-items:center;
+}
+.countryImage{
+    width:50%;
+    padding-right:4%;
+}
+.countryInformration{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+    padding-left:4%;
+}
+.countryInformration ul.info{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0;
+    flex-direction: column;
+    max-height: 180px;
+    row-gap: 2px;
+    column-gap: 64px;
+}
+.countryInformration ul.info li{
+    padding:3px 0;
+    width:50%;
+    font-size:15px;
+}
+.countryInformration ul.info li strong{
+    font-weight:500;
+}
+.borderCountrien{
+    display:flex;
+    align-items:center;
+    font-size:15px;
+    gap:15px;
+}
+.borderCountrien .borderText{
+
+}
+.borderCountrien ul{
+    display:flex;
+    flex-wrap: wrap;
+    gap:15px;
+    list-style:none;
+}
+.borderCountrien ul li{
+    padding: 5px 15px;
+    box-shadow: 0px 0px 4px #ccc;
+    font-size: 14px;
+    list-style:none;
+}
+.borderCountrien ul li a{
+    text-decoration:none;
+    color:inherit;
+    font-size:inherit;
+}
