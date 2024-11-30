@@ -1,0 +1,69 @@
+:root{
+    /* --cardBg:red; */
+    --cardBackground:#fff;
+    --loadingBg:#ccc;
+    --headingHeight:30px;
+    --textHeight:20px;
+    --smallWidth:30%;
+    --fullWidth:100%;
+}
+main.dark{
+    --cardBackground:#182128;
+    --loadingBg:#202c37; 
+}
+
+ .loaderCard{
+    background: var(--cardBackground);
+    height: 321px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom:15px;
+    border-radius:4px;
+    overflow: hidden;
+    width:277px;
+}
+ .loaderCardImage{
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height: 160px;
+    padding-right: 0;
+    background-color:var(--loadingBg);    
+}
+.loaderHeading{
+    height:var(--headingHeight);
+    background:var(--loadingBg);
+    width:var(--smallWidth);
+    margin-inline:15px;
+
+}
+.loaderContent{
+    height:var(--textHeight);
+    background:var(--loadingBg);
+    margin-inline:15px;
+}
+
+
+.loaderCardDtlCont{
+    width:100%;
+     display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom:15px;
+    border-radius:4px;
+    overflow: hidden;   
+}
+.loaderList{
+    height:250px;
+    width:100%;
+    display:flex;
+    gap:30px;
+    flex-flow: column wrap;
+}
+.detailsLoaderImage{
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height:100%;
+    padding-right: 0;
+    background-color:var(--loadingBg);    
+}

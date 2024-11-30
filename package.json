@@ -1,10 +1,11 @@
 {
   "name": "reactcountryproject",
   "version": "1.0.0",
-  "main": "index.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html"
+    
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +13,9 @@
   "description": "",
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router": "^7.0.1",
+    "react-router-dom": "^7.0.1"
   },
   "devDependencies": {
     "parcel": "^2.13.0",

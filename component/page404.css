@@ -1,0 +1,14 @@
+.page404{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.page404 h1{
+    max-width: 300px;
+    line-height: 50px;
+    margin-top: 58px;
+}
+.page404 h1 span{
+    color:red;
+    font-size:5em;
+}
