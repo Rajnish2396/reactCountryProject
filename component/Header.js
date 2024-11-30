@@ -15,7 +15,7 @@ export default function Header({theme}) {
   return (
     <header>
     <div className={`header`}>
-      <a href="/"><h2>Global Country </h2></a>
+      <a href="/"><h2>Global Countrys </h2></a>
       <div className="darkModeBtn" onClick={()=>{
         setDark(!isDark)
         localStorage.setItem('isDarkMode', !isDark )
