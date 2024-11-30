@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ApiFetching from './ApiFetching' 
 import { Link, useLocation, useParams, useNavigate } from "react-router";
-import Loader from './Loader'
-import CountryCard from './countryCard';
+import CountryCard from './CountryCard';
 import SingleCountryLoader from './SingleCountryLoader';
 
 
