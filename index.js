@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
-import App from "./app";
+import App from "./App";
 import Home from './component/Home'
 import SingleCountry from "./component/SingleCountry";
 import Page404 from "./component/Page404";
