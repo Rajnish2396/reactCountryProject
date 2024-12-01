@@ -2,7 +2,7 @@ export default async function ApiFetching(apiUrl){
 
     try{
       let res = await fetch(apiUrl)
-     console.log(apiUrl)
+     //console.log(apiUrl)
       if(!res.ok){
         console.log(`http Error : ${res.status}`)
       }
